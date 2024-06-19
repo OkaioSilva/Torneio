@@ -1,52 +1,64 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
 
-body{
+body {
     background-color: #221f1fe9;
     --sb-track-color: #080808;
     --sb-thumb-color: #eeeaea;
     --sb-size: 9px;
 }
+
 body::-webkit-scrollbar {
     width: var(--sb-size);
 }
+
 body::-webkit-scrollbar-track {
     background: var(--sb-track-color);
     border-radius: 16px;
 }
+
 body::-webkit-scrollbar-thumb {
     background: var(--sb-thumb-color);
     border-radius: 16px;
     border: 1px solid #050505;
 }
-h1, h2, p{
+
+h1,
+h2,
+p {
     color: aliceblue;
 }
-h2{
+
+h2 {
     text-align: center;
     margin-top: 15rem;
 }
-.container{
+
+.container {
     margin-top: 12em;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction:column;
+    flex-direction: column;
 }
-.container p{
+
+.container p {
     padding-bottom: 4em;
 }
-.container h1{
+
+.container h1 {
     padding-bottom: 1em;
 }
-.main_table{
+
+.main_table {
     width: 60vw;
 }
-.partidas{
+
+.partidas {
     display: grid;
     justify-items: center;
     text-align: center;
@@ -54,59 +66,71 @@ h2{
     grid-template-rows: 10em;
     margin-top: 5rem;
     padding-bottom: 1rem;
-    
+
 }
-#partidas{
+
+#partidas {
     padding-top: 8em;
 
 }
-table, td, tr,th{
+
+table,
+td,
+tr,
+th {
     border: 1px solid rgb(0, 0, 0);
     border-collapse: collapse;
     text-align: center;
     padding: 5px;
 
-    background-color:rgba(105, 36, 36, 0.445);
+    background-color: rgba(105, 36, 36, 0.445);
     color: rgb(190, 196, 201);
     box-shadow: rgb(165, 42, 42) 0px 25px 20px -20px;
 }
-table{
+
+table {
     width: 35vw;
-    
+
 }
-.large{
+
+.large {
     width: 75px;
 }
 
-.partidas tbody tr:first-child{
+.partidas tbody tr:first-child {
     font-weight: bold;
 }
 
-.rosa, .verde,.laranja, .azul, .preto{
+.rosa,
+.verde,
+.laranja,
+.azul,
+.preto {
     font-weight: bold;
 }
-.rosa{
+
+.rosa {
     color: rgba(248, 105, 212, 0.986);
 }
 
-.verde{
+.verde {
     color: rgba(12, 248, 52, 0.979);
 }
 
-.laranja{
+.laranja {
     color: rgb(243, 176, 52);
-    
+
 }
 
-.azul{
+.azul {
     color: rgba(94, 143, 233, 0.973);
 }
 
-.preto{
+.preto {
     color: black;
 }
 
-.nav_container{
+.nav_container {
     /* position: relative; */
     margin-top: 0;
     position: fixed;
@@ -114,7 +138,7 @@ table{
     left: 0;
 }
 
-.navBar{
+.navBar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -122,43 +146,106 @@ table{
     width: 100vw;
     margin: 0;
     padding: .5em;
-    
+
     box-shadow: rgb(28, 29, 29) 0px 25px 20px -15px;
     background-color: rgba(0, 0, 0, 0.384);
-    
-    
+
+
 }
 
 
-.navBar ul{
+.navBar ul {
     list-style: none;
     display: flex;
 }
-.navBar li{
+
+.navBar li {
     letter-spacing: 1.2px;
     font-size: 20px;
     padding-right: 1.5em;
 }
 
-a{
+a {
     text-decoration: none;
     color: aliceblue;
 }
-a:hover{
+
+a:hover {
     text-shadow: 3px 3px 5px rgb(188, 190, 188);
 }
 
 
-.container_artilheiros{
+.container_artilheiros {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction:column;
+    flex-direction: column;
 }
-#artilheiros{
+
+#artilheiros {
     padding-bottom: 2em;
     padding-top: 5em;
 }
-.artilheiros{
+
+.artilheiros {
     margin-bottom: 2em;
+}
+
+
+@media (min-width: 319px) and (max-width: 450px) {
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 10em;
+    }
+    
+    table,
+    td,
+    tr,
+    th {
+        padding: 3px;
+        width: 350px;
+    }
+    
+    .main_table {
+        width: 95vw;
+    }
+    .artilheiros{
+        width: 80vw;
+        margin-top: 4em;
+        margin-bottom: 10em;
+    }
+    .container_artilheiros{
+        margin-top: 17em;
+        height: 785px;
+    }
+    .partidas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 45px;
+    }
+    
+    .partidas div {
+        padding: 15px;
+    }
+    
+    #partidas {
+        padding-top: 6em;
+    }
+
+    #artilheiros{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .navBar li {
+        letter-spacing: 0.5px;
+        font-size: 17px;
+        padding-right: 2.5em;
+    }
+
 }
