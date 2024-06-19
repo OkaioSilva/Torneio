@@ -249,3 +249,63 @@ a:hover {
     }
 
 }
+
+@media (min-width: 449px) and (max-width: 800px) {
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        /* margin-top: 10em; */
+    }
+    .partidas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 45px;
+    }
+    table,
+    td,
+    tr,
+    th {
+        padding: 3px;
+        width: 350px;
+    }
+
+    .main_table {
+        width: 95vw;
+    }
+
+    .nav_container {
+        /* position: relative; */
+        margin-top: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+}
+
+@media (min-width: 799px) and (max-width: 1440px){
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        /* margin-top: 10em; */
+    }
+    .partidas {
+        display: grid;
+    justify-items: center;
+    text-align: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 10em;
+    }
+    table,
+    td,
+    tr,
+    th {
+        padding: 3px;
+        width: 350px;
+    }
+}
