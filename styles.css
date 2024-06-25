@@ -178,9 +178,104 @@ a:hover{
     margin-bottom: 2em;
 }
 
-@media (min-width: 319px) and (max-width: 450px) {
+@media (min-width: 200px) and (max-width: 320px) {
     body{
         overflow-x: hidden;
+        box-sizing: border-box;
+    }
+    .img{
+        width: 44px;
+    }
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 10em;
+    }
+    .container h1{
+        font-size: 25px;
+    }
+    .container p{
+        font-size: 14px;
+    }
+    
+    table,
+    td,
+    tr,
+    th {
+        padding: 1.5px;
+        width: 240px;
+        font-size: 14px;
+    }
+    
+    .main_table {
+        width: 40vw;
+    }
+    .sobre{
+        padding-top: 40px;
+        /* align-content: center; */
+        /* text-align: center; */
+
+    }
+
+    .border-left_first{
+    border-left: 2.5px solid green;
+    border-left-width:px;
+    }
+
+    .border-left_semi{
+    border-left: 2.5px solid rgb(207, 104, 7);
+    }
+    .border-left_last{
+    border-left: 2.5px solid rgb(255, 16, 16);
+
+
+    }
+    .artilheiros{
+        width: 80vw;
+        margin-top: 4em;
+        margin-bottom: 10em;
+    }
+    .container_artilheiros{
+        margin-top: 17em;
+        height: 785px;
+    }
+    .partidas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 45px;
+    }
+    
+    .partidas div {
+        padding: 10px;
+    }
+    
+    #partidas {
+        padding-top: 6em;
+        font-size: 20px;
+    }
+
+    #artilheiros{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .navBar li {
+        letter-spacing: 0.2px;
+        font-size: 15px;
+        padding-right: 1em;
+    }
+
+}
+@media (min-width: 321px) and (max-width: 450px) {
+    body{
+        overflow-x: hidden;
+    }
+    .img{
+        width: 50px;
     }
     .container {
         display: flex;
@@ -251,8 +346,8 @@ a:hover{
 
     .navBar li {
         letter-spacing: 0.5px;
-        font-size: 17px;
-        padding-right: 2.5em;
+        font-size: 18px;
+        padding-right: 1.5em;
     }
 
 }
@@ -265,7 +360,9 @@ a:hover{
         flex-direction: column;
         /* margin-top: 10em; */
     }
-
+    .img{
+        width: 44px;
+    }
     .border-left_first{
         border-left: 3px solid green;
         border-left-width:px;
